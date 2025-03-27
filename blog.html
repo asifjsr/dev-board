@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-board</title>
+    <!-- add daisy ui -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- add google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- css style -->
+     <style>
+        .font-poppins{
+            font-family: "Poppins", sans-serif;
+        }
+        .bg-color{
+            background-color: #F4F7FF;
+        }
+        .text-color{
+            color: #00303C;
+            
+        }
+        .dashboard{
+            border-radius: 12px;
+
+            background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%,rgb(108, 127, 250) 52.66%,rgb(155, 168, 248) 99.733%);
+        }
+     </style>
+
+</head>
+<body class="font-poppins bg-color mx-auto max-w-screen-xl text-color ">
+    
+    <header>
+        <nav class="p-4 bg-white rounded-xl mt-6 ">
+            <div class="flex justify-between">
+                <div class="flex items-center gap-3">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="text-4xl">Dev<span class="font-bold ">Board</span> </h1>
+                </div>
+                <div class="flex gap-6">
+                    <button  id="back-btn" class=" hover:bg-blue-600 cursor-pointer  bg-blue-500 text-white p-4 rounded-xl ">Back to The Desk</button>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="text-center font-bold text-5xl mt-6 ">BLOG</h1>
+        <div class="bg-white mt-6 p-5 rounded-3xl">
+            <h1 class="font-bold">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <br>
+            <hr class="border-dotted">
+            <br>
+            <p class="text-gray-500">In web development, there are several ways to select elements in the DOM: getElementById() selects an element by its id, while getElementsByClassName() and getElementsByTagName() select elements based on their class or tag name, respectively. querySelector() allows you to select the first element matching a CSS selector, and querySelectorAll() selects all matching elements. Additionally, childNodes lets you access all child nodes of an element. These methods provide different options for accessing and interacting with elements on a webpage.</p>
+        </div>
+
+        <div class="bg-white mt-6 p-5 rounded-3xl">
+            <h1 class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <br>
+            <hr class="border-dotted">
+            <br>
+            <p class="text-gray-500">The main difference between innerHTML, innerText, and textContent lies in how they handle the content inside an element. innerHTML retrieves or sets the HTML markup inside an element, including any HTML tags, while innerText returns the visible text content, ignoring any hidden elements or HTML tags. textContent also retrieves the text inside an element but does not consider any styling or hidden elements, returning all text as-is. While innerHTML is useful for manipulating HTML structures, innerText and textContent are primarily used for working with raw text.</p>
+        </div>
+        <div class="bg-white mt-6 p-5 rounded-3xl">
+            <h1 class="font-bold">Question-3: What is event delegation in the DOM?
+            </h1>
+            <br>
+            <hr class="border-dotted">
+            <br>
+            <p class="text-gray-500">Event delegation is a technique in the DOM where instead of attaching event listeners to individual child elements, you attach a single event listener to a parent element. This listener will then handle events for all current and future child elements that match the event target. It works by taking advantage of event bubbling, where events propagate up the DOM tree. This method improves performance, especially when dealing with a large number of elements, as it reduces the number of event listeners attached to each element.</p>
+        </div>
+        <div class="bg-white mt-6 p-5 rounded-3xl">
+            <h1 class="font-bold">Question-4: What is event bubbling in the DOM?
+            </h1>
+            <br>
+            <hr class="border-dotted">
+            <br>
+            <p class="text-gray-500">Event bubbling in the DOM is when an event triggered on a child element "bubbles up" to its parent elements. This means that the event will first be captured by the innermost element (the one where the event was triggered) and then propagate upwards through its ancestors, triggering any event listeners attached to those parent elements. This allows for more efficient event handling, as you can listen for events on a parent element instead of attaching listeners to each individual child.</p>
+        </div>
+        </div>
+        <div class="bg-white mt-6 p-5 rounded-3xl mb-6">
+            <h1 class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?
+            </h1>
+            <br>
+            <hr class="border-dotted">
+            <br>
+            <p class="text-gray-500">To create an element, use document.createElement('tagName'); add it with parentElement.appendChild(newElement); and remove it with parentElement.removeChild(newElement).</p>
+        </div>
+        </div>
+
+        
+
+    </main>
+    <script src="js/blog.js"></script>
+    </body>

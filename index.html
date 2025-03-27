@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev-board</title>
     <!-- add daisy ui -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- add google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,6 +32,7 @@
 
 </head>
 <body class="font-poppins bg-color mx-auto max-w-screen-xl text-color ">
+    
     <header class=" mx-auto">
         <nav class="p-4 bg-white rounded-xl mt-6 ">
             <div class="flex justify-between">
@@ -47,7 +46,7 @@
                         <p id="total-work" class="font-bold text-3xl">23</p>
                     </div>
                     <div class="bg-color rounded-full p-2">
-                        <img class="w-full" src="assets/theme-btn.png" alt="">
+                        <img id="colorButton" class="w-full  cursor-pointer" src="assets/theme-btn.png" alt="">
                     </div>
                 </div>
             </div>
@@ -73,7 +72,7 @@
                             </div>
                         </div>
                         <!-- dashboard card 02 -->
-                         <div class="dashboard p-7 flex  items-center col-span-2">
+                         <div id="blog" class="dashboard p-7 flex  items-center col-span-2 cursor-pointer">
                             <div>
                                 <img src="assets/board.png" alt="">
                             </div>
@@ -264,5 +263,6 @@
     <script src="js/date.js"></script>
     <script src="js/clear.js"></script>
     <script src="utilities/utilities.js"></script>
+    <script src="js/color.js"></script>
 </body>
 </html>
