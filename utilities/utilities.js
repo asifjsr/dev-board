@@ -12,7 +12,7 @@ function completeTask(buttonId, taskId) {
     alert('Board Updated Successfully');
 
     if (taskAssigned === 0) {
-        alert("All tasks have been assigned!");
+        alert("Congratulation !! All tasks have been assigned!");
     }
 
     document.getElementById('total-work').innerText = totalComplete;
